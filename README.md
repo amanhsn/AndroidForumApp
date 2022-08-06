@@ -1,5 +1,5 @@
 # AndroidForumApp
-Forum app for android devices, written in Java as school project.
+Forum app for android devices, written in Java as a school project.
 
 My final high school project worth 5 units in the Bagrut.
 
