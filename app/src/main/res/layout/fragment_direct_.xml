@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Direct_Fragment">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:background="@drawable/profile_wave"
+        android:id="@+id/MainProfileFrame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/MainProfileRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/Dashboard_TV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/Dashboard_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send a direct message"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Dashboard_Items_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Dashboard_TV"
+                android:text="Connect with friends"
+                android:textColor="@color/teal_700"
+                android:textSize="18sp"
+
+                />
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/direct_message_icon" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/MainProfileFrame"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Direct Messages"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click 'CONNECT' to send a direct message to someone \nDirect messages sent to/by you will be received by SMS function"
+                android:textSize="14dp"
+                />
+            <Button
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connect"
+                android:id="@+id/btn_Connect"
+                android:onClick="SwitchToActivityDirect"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes: \n- Messages can be sent to anyone (including non-users) \n- By sending a message you agree to share your number \n- Sending a message involves the standard sms-fee "
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

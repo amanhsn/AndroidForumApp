@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Account"
+        android:title="Dashboard"
+        android:icon="@drawable/icon_profile"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="#404040"
+        />
+
+
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/icon_home"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="#404040"
+        />
+
+    <item
+        android:id="@+id/Share"
+        android:title="Share"
+        android:icon="@drawable/icon_upload"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="#404040"
+        />
+
+    <item
+        android:id="@+id/Direct"
+        android:title="Direct"
+        android:icon="@drawable/icon_direct"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="#404040"
+        />
+
+
+</menu>

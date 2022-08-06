@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Share_Fragment">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:background="@drawable/profile_wave"
+        android:id="@+id/MainProfileFrame">
+
+        <RelativeLayout
+            android:id="@+id/MainProfileRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/Dashboard_TV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/Dashboard_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a post"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Dashboard_Items_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Dashboard_TV"
+                android:text="Project your thoughts"
+                android:textColor="@color/teal_700"
+                android:textSize="18sp"
+
+                />
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/share_bigpost_icon" />
+        </RelativeLayout>
+
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/Share_Layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginTop="215dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:text="Share Post"
+                android:layout_marginBottom="5dp"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:background="@drawable/rounded_corners_input"
+                android:layout_marginRight="62dp">
+
+                <EditText
+                    android:id="@+id/Title_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Title"
+                    android:maxLines="1"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:inputType="text"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/Title_Logo"
+                    />
+                <ImageView
+                    android:id="@+id/Title_Logo"
+                    android:layout_width="22dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/share_title_icon"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rounded_corners_input"
+                android:layout_marginRight="62dp">
+
+                <EditText
+                    android:id="@+id/Post_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="What's on your mind?"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="145dp"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/Post_Logo"
+                    />
+
+                <ImageView
+                    android:id="@+id/Post_Logo"
+                    android:layout_width="35dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/share_post_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:background="@drawable/rounded_corners_input"
+                android:layout_marginRight="62dp">
+
+                <EditText
+                    android:id="@+id/Tags_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Tags"
+                    android:maxLines="1"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:inputType="text"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/Tags_Logo"
+                    />
+                <ImageView
+                    android:id="@+id/Tags_Logo"
+                    android:layout_width="22dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/share_tags_icon"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:text="Post +"
+                android:layout_gravity="center"
+                android:id="@+id/InitiatePost"
+                android:background="@drawable/rounded_button"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
